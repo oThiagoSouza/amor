@@ -156,7 +156,9 @@ section {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    background-image: url('../img/timeline/celular.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     height: auto;
     padding: 24px;
 }
