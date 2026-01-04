@@ -1,0 +1,164 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+}
+
+.hero {
+    background-image: url('../img/hero/legal.jpg');
+    background-size:cover;
+    color: white;
+    padding: 100px 20px;
+    min-height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+.hero_text {
+    text-align: start;
+    margin-bottom: 20px;
+    font-family: "Playwrite RO", cursive;
+    font-weight: bold;
+    color: #E74C3C;
+    width: 80%;
+
+    h1 {
+        font-size: 82px;
+    }
+
+    p {
+        font-size: 60px;
+    }
+}
+section {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+section h2 {
+    margin-bottom: 40px;
+    font-size: 2em;
+}
+
+#sec1{
+    background-color: #5B3256;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.sec1-itens {
+    display: flex;
+    gap: 10px;
+    .item{
+        text-align: center;
+        padding: 10px;
+        border-radius: 10px;
+        background-color: #9b1b30a2;
+    }
+}
+
+#sec2{
+    background-color: #5B3256;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.momentos_itens{
+    display: flex;
+    gap: 10px;
+    
+    .momento{
+
+        img{
+            max-width: 250px;
+            margin-bottom: 20px;
+        };
+
+        text-align: center;
+        padding: 10px;
+        border-radius: 10px;
+        background-color: #9b1b30a2;
+    }
+}
+
+#sec3{
+    background-color: #5B3256;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.mom{
+    display: flex;
+    align-items: center;
+    background-image: url('../img/timeline/carrossel.jpg');
+    height: 50vh;
+
+    p{
+        color: #ffffff;
+        font-size: 24px;
+        max-width: 40%;
+        text-align: center;
+        font-family: "Playwrite RO", cursive;
+        font-weight: bold;
+    }
+}
+
+@media (max-width: 768px) {
+
+.hero {
+    padding: 60px 16px;
+    min-height: 450px;
+    text-align: center;
+    justify-content: center;
+}
+
+.hero_text {
+    width: 100%;
+    text-align: center;
+}
+
+.hero_text h1 {
+    font-size: 42px;
+}
+
+.hero_text p {
+    font-size: 26px;
+}
+
+section {
+    padding: 30px 16px;
+}
+
+.sec1-itens {
+    flex-direction: column;
+}
+
+.momentos_itens {
+    flex-direction: column;
+    align-items: center;
+}
+
+.momentos_itens .momento img {
+    max-width: 180px;
+}
+
+.mom {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: auto;
+    padding: 24px;
+}
+
+.mom p {
+    max-width: 100%;
+    font-size: 18px;
+}
+}
